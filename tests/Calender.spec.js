@@ -15,7 +15,7 @@ test('@Web Calendar validations', async({page})=>
     await page.locator(".react-calendar__year-view__months__month").nth(Number(monthNumber)-1).click();
     //above returns 12 months.n(5) equivalent to 6
     await page.locator("//abbr[text()='"+date+"']").click();
- 
+ //Calender test
     const inputs =  page.locator('.react-date-picker__inputGroup__input') // returns 3 elements that is month, day, year
  
     for(let i =0; i<expectedList.length;i++)
